@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    ul
+        each name in names
+            li= name
+    
+    form(method='POST')
+        label(for='name') Name:
+            input(type='text', name='name')
